@@ -7,12 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="bin\**" />
+    <Compile Remove="obj\**" />
     <Compile Remove="Pages\Shared\**" />
     <Compile Remove="wwwroot\**" />
+    <Content Remove="bin\**" />
+    <Content Remove="obj\**" />
     <Content Remove="Pages\Shared\**" />
     <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="obj\**" />
     <EmbeddedResource Remove="Pages\Shared\**" />
     <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="bin\**" />
+    <None Remove="obj\**" />
     <None Remove="Pages\Shared\**" />
     <None Remove="wwwroot\**" />
   </ItemGroup>
