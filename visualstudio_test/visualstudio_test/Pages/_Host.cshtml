@@ -1,0 +1,24 @@
+﻿@page "/"
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Blazor</title>
+    <link href="visualstudio_test.styles.css" rel="stylesheet" />
+</head>
+<body>
+    <component type="typeof(visualstudio_test.App)" render-mode="ServerPrerendered" />
+    <script src="_framework/blazor.server.js"></script>
+
+    <script type="text/javascript">
+        function myAlert(x) {
+            alert(x);
+        }
+    </script>
+
+</body>
+</html>

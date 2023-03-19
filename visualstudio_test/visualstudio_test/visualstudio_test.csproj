@@ -6,4 +6,56 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Pages\Shared\**" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="Pages\Shared\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="Pages\Shared\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="Pages\Shared\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Error.cshtml.cs" />
+    <Compile Remove="Pages\Index.cshtml.cs" />
+    <Compile Remove="Pages\Index1.cshtml.cs" />
+    <Compile Remove="Pages\Privacy.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="appsettings.Development.json" />
+    <Content Remove="appsettings.json" />
+    <Content Remove="Pages\Error.cshtml" />
+    <Content Remove="Pages\Index.cshtml" />
+    <Content Remove="Pages\Index1.cshtml" />
+    <Content Remove="Pages\Privacy.cshtml" />
+    <Content Remove="Pages\_ViewImports.cshtml" />
+    <Content Remove="Pages\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Index1.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Index.razor" />
+    <_ContentIncludedByDefault Remove="Pages\Index1.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\_Host.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\_Host.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Index.razor" />
+    <None Include="Pages\_Host.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Index.razor" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,19 @@
+﻿@page "/"
+
+<h1>これはIndexページですよー</h1>
+
+<p>@_message</p>
+
+<button @onclick="OnClick">Click me</button>
+
+<h3>他ページ</h3>
+<a href="/Counter">カウンター</a>
+
+@code {
+    private string _message = "こんにちはー！";
+
+    private void OnClick()
+    {
+        _message = DateTime.Now.ToShortDateString();
+    }
+}
